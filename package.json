@@ -1,0 +1,14 @@
+{
+  "name": "kauth-integration-guide",
+  "version": "1.0.0",
+  "description": "Guia de integração com o K-Auth — exemplos b2b e SPA",
+  "private": true,
+  "workspaces": [
+    "b2b",
+    "spa"
+  ],
+  "scripts": {
+    "b2b": "npm run dev --workspace=b2b",
+    "spa": "npm run dev --workspace=spa"
+  }
+}

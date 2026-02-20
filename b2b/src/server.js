@@ -24,19 +24,19 @@ const crypto = require("crypto");
 // CONFIGURAÇÕES
 // ==========================================
 
-const PORT = 3015;
+const PORT = 3014;
 
 /**
  * CLIENT_ID: Identificador da sua aplicação cadastrada no K-Auth.
  * Obtenha no painel do K-Auth ao registrar um novo cliente.
  */
-const CLIENT_ID = "k-auth";
+const CLIENT_ID = "b2b-test";
 
 /**
  * REDIRECT_URI: URL para onde o K-Auth vai redirecionar após a autenticação.
  * IMPORTANTE: deve ser cadastrada EXATAMENTE igual no painel do K-Auth.
  */
-const REDIRECT_URI = "https://test.dev.local/callback";
+const REDIRECT_URI = "http://localhost:3014/callback";
 
 /**
  * KAUTH_FRONTEND_URL: URL da tela de login do K-Auth (acessada pelo browser do usuário).
@@ -135,7 +135,7 @@ app.use(
     secret: "segredo-super-seguro-para-sessao-local",
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: true }, // secure: true é obrigatório com HTTPS
+    //cookie: { secure: true }, // secure: true é obrigatório com HTTPS
   }),
 );
 
