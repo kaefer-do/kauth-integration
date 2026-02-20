@@ -41,31 +41,31 @@ const REDIRECT_URI = "http://localhost:3014/callback";
 /**
  * KAUTH_FRONTEND_URL: URL da tela de login do K-Auth (acessada pelo browser do usuário).
  */
-const KAUTH_FRONTEND_URL = "https://kauth.dev.local/auth/authorize";
+const KAUTH_FRONTEND_URL = "https://kauth.ripbr.com.br/auth/authorize";
 
 /**
  * KAUTH_BACKEND_URL: URL da API do K-Auth para troca de tokens (chamada servidor→servidor).
  * Nunca é exposta ao browser.
  */
-const KAUTH_BACKEND_URL = "https://api-kauth.dev.local/auth/token";
+const KAUTH_BACKEND_URL = "https://api-kauth.ripbr.com.br/auth/token";
 
 /**
  * KAUTH_REFRESH_URL: URL da API do K-Auth para renovação de tokens (chamada servidor→servidor).
  * Nunca é exposta ao browser.
  */
-const KAUTH_REFRESH_URL = "https://api-kauth.dev.local/auth/refresh";
+const KAUTH_REFRESH_URL = "https://api-kauth.ripbr.com.br/auth/refresh";
 
 /**
  * KAUTH_REVOKE_URL: URL da API do K-Auth para revogar o refresh token (chamada servidor→servidor).
  * Usada no logout para invalidar o token na base de dados do K-Auth.
  */
-const KAUTH_REVOKE_URL = "https://api-kauth.dev.local/auth/logout";
+const KAUTH_REVOKE_URL = "https://api-kauth.ripbr.com.br/auth/logout";
 
 /**
  * KAUTH_LOGOUT_URL: URL da tela de logout do K-Auth (acessada pelo browser do usuário).
  * Limpa os cookies de SSO do K-Auth no navegador.
  */
-const KAUTH_LOGOUT_URL = "https://kauth.dev.local/logout";
+const KAUTH_LOGOUT_URL = "https://kauth.ripbr.com.br/logout";
 
 // ==========================================
 // HELPERS

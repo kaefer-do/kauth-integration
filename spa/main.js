@@ -3,8 +3,8 @@
 // ==========================================
 const CLIENT_ID = "spa-test"; // Cadastre esse ID no K-Auth
 const REDIRECT_URI = "https://localhost:3015/callback"; // URL padrão do Vite
-const KAUTH_FRONTEND_URL = "https://kauth.dev.local/auth/authorize";
-const KAUTH_BACKEND_URL = "https://api-kauth.dev.local/auth/token";
+const KAUTH_FRONTEND_URL = "https://kauth.ripbr.com.br/auth/authorize";
+const KAUTH_BACKEND_URL = "https://api-kauth.ripbr.com.br/auth/token";
 
 const appDiv = document.getElementById("app");
 
@@ -136,7 +136,7 @@ function renderDashboard(tokens) {
   document.getElementById("logoutBtn").addEventListener("click", () => {
     sessionStorage.removeItem("kauth_tokens");
     // Para um logout real (SSO), redirecionamos para o K-Auth
-    window.location.href = `https://kauth.dev.local/logout?redirect_uri=${encodeURIComponent(REDIRECT_URI)}`;
+    window.location.href = `https://kauth.ripbr.com.br/logout?redirect_uri=${encodeURIComponent(REDIRECT_URI)}`;
   });
 }
 
